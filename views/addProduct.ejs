@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/addproduct.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="containers">
+            <div class="tab form-ctn">
+                <form class="add-form" method="POST" action="/admin/addproduct" enctype="multipart/form-data">
+                    <h1>Add Product</h1>
+
+                    <input type="text" id="productName" placeholder="Product Name" name="productName">
+                    <input type="number" id="price" placeholder="Price" name="price">
+                    <input type="number" id="qty" placeholder="Qty" name="qty">
+                    <input type="text" id="category" placeholder="category" name="category">
+                    <textarea id="description" placeholder="description" name="description"></textarea>
+
+
+                    <label for="image"> Select Image:</label>
+                    <input type="file" id="image" name="image">
+
+                    <button type="submit">Submit</button>
+
+                </form>
+            </div>
+
+            <div class="tab view">
+                
+                    <a href="/admin/inventory">View Product</a>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

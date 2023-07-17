@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/inventory.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="section">
+            
+            <h1>Your Products</h1>
+            <% for(products of product)  {%>
+                <div class="products-list">
+                    <div class="product">
+                        <div class="img">
+                            <img src="<%=products.image%>" alt="">
+                        </div>
+                        <div class="data">
+                            <h1><%= products.productName %></h1>
+    
+                            
+                                <a href="/admin/delete/<%=products._id%>"><i class="fa-solid fa-trash"></i></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            <%}%>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!-- search-results.ejs -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/search.css">
+    <title>Search Results</title>
+    <!-- Include your CSS and other head elements here -->
+</head>
+<body>
+    <h1 style="text-align: center;">Search Results</h1>
+
+    <div class="main-search">
+        <% if (products.length > 0) { %>
+        <div class="search-results">
+            <% products.forEach((product) => { %>
+            <div class="result-bar">
+                <div class="img">
+                    <img src="<%= product.image%>" alt="">
+                </div>
+                <div class="left-data">
+                    <a class="pnames" href="/productinfo/<%= product._id %>"><%=product.productName%></a>
+                    <span class="pprice" >Rs. <%=product.price%></span>
+                </div>
+            </div>
+            <% }); %>
+        </div>
+        <% } else { %>
+            <p>No results found.</p>
+        <% } %>
+    </div>
+    
+    <!-- <% if (products.length > 0) { %>
+        <% products.forEach((product) => { %>
+            <div>
+                <h2><%= product.productName %></h2>
+                <p>Price: $<%= product.price %></p>
+                <p>Quantity: <%= product.qty %></p>
+                <p>Category: <%= product.category.join(', ') %></p>
+                <p>Description: <%= product.description %></p>
+                <img src="/images/<%= product.image %>" alt="<%= product.productName %> Image">
+            </div>
+            <hr>
+        <% }); %>
+    <% } else { %>
+        <p>No results found.</p>
+    <% } %> -->
+
+    <!-- Include your scripts and other body elements here -->
+</body>
+</html>

@@ -1,0 +1,165 @@
+.slider {
+    width: 100%;
+    overflow: hidden;
+    height: 50vh;
+    background-color: aquamarine;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+
+}
+
+.slides img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.offers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    /* background-color: blue; */
+}
+
+.off-head {
+    /* background-color: aqua; */
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.off-banners {
+    display: flex;
+    /* background-color: blueviolet; */
+    justify-content: space-evenly;
+    height: 80%;
+    width: 100%;
+}
+
+.off-box {
+    background-color: aquamarine;
+    height: 96%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.poster {
+    background-color: black;
+    height: 90%;
+    width: 100%;
+}
+
+.poster img {
+    height: 100%;
+    width: 100%;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+}
+
+.product-ctn {
+    width: 90%;
+    /* background-color: aquamarine; */
+
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.product-box {
+    height: 27vh;
+    /* border: 1px solid black; */
+    width: 16%;
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    transition-duration: 1s;
+}
+.hover-transisition{
+    transition-duration: 1s;
+}
+.hover-transisition:hover{
+    box-shadow: 0px 10px 42px 0px rgb(42, 22, 230);
+}
+.product-box:hover{
+    box-shadow: 0px 10px 42px 0px rgb(42, 22, 230);
+    height: 32vh;
+    width: 30vh;
+
+}
+
+.product-box a {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.pimg {
+    background-color: aliceblue;
+    height: 70%;
+    padding: 1%;
+}
+
+.pimg img {
+    height: 100%;
+    width: 100%;
+}
+.pnames, .pprice{
+    font-size: 2rem;
+   margin-left: 2%;
+}
+
+.category-main{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.category-div{
+    /* border: 1px solid black; */
+    height: 70vh;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    /* padding: 1%; */
+}
+.category-div .category{
+    height: 35%;
+    width: 17%;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 1s;
+}
+.category a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.category img{
+    height: 90%;
+    width: 90%;
+    display: flex;
+   
+}
+.category:hover{
+    box-shadow: 0px 10px 42px 0px rgb(42, 22, 230);
+    height: 40%;
+    width: 20%;
+}
+

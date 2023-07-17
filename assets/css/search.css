@@ -1,0 +1,43 @@
+.main-search{
+    display: flex;
+    justify-content: center;
+}
+
+.search-results{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-bar{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    width: 70%;
+    /* background-color: aqua; */
+    height: 20vh;
+    padding: 1%;
+    justify-content: space-evenly;
+    margin: 1%;
+}
+
+.img{
+    background-color: aquamarine;
+    height: 100%;
+    width: 16%;
+}
+.img img{
+    height: 100%;
+    width: 100%;
+}
+.left-data{
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    width: 80%;
+    font-size: 2rem;
+}
+.left-data a{
+    text-decoration: none;
+}
