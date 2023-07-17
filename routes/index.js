@@ -7,5 +7,5 @@ router.get('/', homeController.home);
 router.get('/productinfo/:id', homeController.info)
 router.use('/admin', require('./admin'))
 router.post('/search',homeController.searchProduct)
-router.get('/delete/:productId')
+
 module.exports = router; 
