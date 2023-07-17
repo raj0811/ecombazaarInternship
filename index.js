@@ -49,7 +49,7 @@ app.use(session({
     },
     store: MongoStore.create({
 
-        mongoUrl: 'mongodb://localhost/myecommbazzar',
+        mongoUrl: 'mongodb+srv://rpbarmaiya:QeKJFmeWRLJ2m9tx@cluster0.bbhpkel.mongodb.net/?retryWrites=true&w=majority',
         autoRemove: 'disabled'
 
     },
